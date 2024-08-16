@@ -16,10 +16,4 @@ const nextConfig = {
   },
 };
 
-module.exports = {
-  experimental: {
-    missingSuspenseWithCSRBailout: false,
-  },
-};
-
 export default nextConfig;
