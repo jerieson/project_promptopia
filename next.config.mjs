@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    missingSuspenseWithCSRBailout: false,
     appDir: true,
     serverComponentsExternalPackages: ["mongoose"],
   },
@@ -14,6 +13,12 @@ const nextConfig = {
       topLevelAwait: true,
     };
     return config;
+  },
+};
+
+module.exports = {
+  experimental: {
+    missingSuspenseWithCSRBailout: false,
   },
 };
 
